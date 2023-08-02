@@ -1,1 +1,21 @@
+{
+  "name": "Ayy Papa Network",
+  "short_name": "Ayy Papa",
+  "start_url": ".",
+  "theme_color": "#4287f5",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "icons":[
+    {
+      "src":"",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src":"",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 
+}
