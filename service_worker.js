@@ -2,7 +2,7 @@
 self.addEventListener("install",e=>{
   e.waitUntil(
     caches.open("static").then(cache=>{
-      return cache.addAll(["./",'./images/manifest-icon-192.maskable']);
+      return cache.addAll(["./",'.images/pwaimage/manifest-icon-192.maskable.png']);
     })
   );
 });
