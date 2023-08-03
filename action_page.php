@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 <?php
 if (isset($_POST['Email'])) {
 
@@ -74,3 +78,6 @@ if (isset($_POST['Email'])) {
 <?php
 }
 ?>
+
+</body>
+</html>
