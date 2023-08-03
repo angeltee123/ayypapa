@@ -84,7 +84,7 @@ input[type=submit]:hover {
       <img src="images/pic03.jpg" style="width:100%">
     </div>
     <div class="column">
-      <form submit="/action_page.php">
+      <form onsubmit="sendEmail(); reset(); return false;">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
@@ -102,6 +102,23 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
 
 <script src="index.js"></script>
   
